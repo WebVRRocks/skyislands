@@ -1,2 +1,2 @@
 # skyislandsvr
-An experience for Gear VR
+www.skyislandsvr.com
