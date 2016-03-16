@@ -5,7 +5,7 @@
     <title>sky islands</title>
 <!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
 -->
- <script type="text/javascript" src="aframe.js"></script>
+ <script type="text/javascript" src="/js/aframe.js"></script>
     
   </head>
 
@@ -13,12 +13,12 @@
 
   <a-assets>
   <a-cubemap id="sky">
-    <img src="images/right.png">
-    <img src="images/left.png">
-    <img src="images/top.png">
-    <img src="images/bottom.png">
-    <img src="images/front.png">
-    <img src="images/back.png">
+    <img src="/images/skybox/right.png">
+    <img src="/images/skybox/left.png">
+    <img src="/images/skybox/top.png">
+    <img src="/images/skybox/bottom.png">
+    <img src="/images/skybox/front.png">
+    <img src="/images/skybox/back.png">
   </a-cubemap>
 </a-assets>
 
@@ -33,13 +33,13 @@
 <a-light type="directional" color="white" position="1 1 1"></a-light>
 
 <!-- NAV ELEMENTS -->
-  <a-entity position="0 -1.5 0" scale="2 2 2" geometry="primitive: box" color="blue"material="src: url(images/icon.png)"
+  <a-entity position="0 -1.5 0" scale="2 2 2" geometry="primitive: box" color="blue"material="src: url(/images/icon.png)"
         </a-entity>
 
 <!-- TEMPLATES -->
 	<template is="a-template" element="floating-island">  
 
-  	<a-model src="floating_island3.dae">  
+  	<a-model src="/models/floating_island3.dae">  
               <a-animation attribute="position"
                to="0 0.6 0"
                dur="5000"
@@ -55,7 +55,7 @@
 
 	<template is="a-template" element="floating-island2">  
 
-  	<a-model src="floating_island2.dae">  
+  	<a-model src="/models/floating_island2.dae">  
               <a-animation attribute="position"
                to="0 0.6 0"
                dur="5000"
@@ -95,7 +95,7 @@
 
 
 <!-- ROCKS -->
-  <a-model src="webSceneRocks.dae" position="0 -6 0" scale="3 3 3">  
+  <a-model src="/models/webSceneRocks.dae" position="0 -6 0" scale="3 3 3">  
   </a-model>
 
 <!-- SKYBOX -->
