@@ -1,4 +1,9 @@
 
+# pepros webserver #
+#################
+.cfg
+
+
 # ignoring that pesky mac file that is generated #
 ####################
 .DS_Store
