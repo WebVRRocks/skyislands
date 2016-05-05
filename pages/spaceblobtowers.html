@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>MossMarch</title>
+<!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+-->
+ <script type="text/javascript" src="/js/aframe.js"></script>
+    
+  </head>
+  <body>
+
+  <a-scene fog="type: exponential; density: .095; color: #788DA6; far: 30; near: 9">
+
+ <a-sky color="#FFC941"></a-sky> 
+
+
+
+<!-- lights and ground -->
+<a-entity light="type: point; color: #EFFFD0; intensity: 1.7" position="3, 10, 5"></a-entity>
+
+<a-plane rotation="90 0 0" scale="50 50" color="#EEFF9B" opacity="0.4">
+               <a-animation attribute="position"
+               from="0 1.1 0"
+               to="0 1.08 0"
+               dur="4000"
+               repeat="indefinite"
+               direction="alternate">
+               </a-animation>
+</a-plane>
+
+
+<!-- objects in scene -->
+ <a-model src="/models/spaceblobtowers.dae" position="3 0 2"></a-model>
+
+  </a-scene>	
+  </body>
+  </html>
