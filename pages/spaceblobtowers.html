@@ -10,28 +10,26 @@
   </head>
   <body>
 
-  <a-scene fog="type: exponential; density: .095; color: #788DA6; far: 30; near: 9">
+  <a-scene fog="type: exponential; density: .2; color: #D8DEBC; far: 30; near: 1">
 
- <a-sky color="#FFC941"></a-sky> 
+
+ <a-sky color="#D8DEBC"></a-sky> 
 
 
 
 <!-- lights and ground -->
-<a-entity light="type: point; color: #EFFFD0; intensity: 1.7" position="3, 10, 5"></a-entity>
+<a-entity light="type: point; color: #EFFFD0; intensity: 2" position="3, 10, -5"></a-entity>
+<a-entity light="type: point; color: #A8C5E8; intensity: 0.5" position="-7, 5, 6"></a-entity>
+<a-entity light="type: ambient; color: #4C076E; intensity: 0.2" position="-9, 10, 5"></a-entity>
 
-<a-plane rotation="90 0 0" scale="50 50" color="#EEFF9B" opacity="0.4">
-               <a-animation attribute="position"
-               from="0 1.1 0"
-               to="0 1.08 0"
-               dur="4000"
-               repeat="indefinite"
-               direction="alternate">
-               </a-animation>
+
+<a-plane rotation="90 0 0" scale="50 50" position="0 0.01 0" color="#190118" opacity="0.2">
+
 </a-plane>
 
 
 <!-- objects in scene -->
- <a-model src="/models/spaceblobtowers.dae" position="3 0 2"></a-model>
+ <a-model src="/models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0"></a-model>
 
   </a-scene>	
   </body>
