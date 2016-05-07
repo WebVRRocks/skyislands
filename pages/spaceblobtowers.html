@@ -11,10 +11,7 @@
   <body>
 
   <a-scene fog="type: exponential; density: .2; color: #D8DEBC; far: 30; near: 1">
-
-
  <a-sky color="#D8DEBC"></a-sky> 
-
 
 
 <!-- lights and ground -->
@@ -29,7 +26,49 @@
 
 
 <!-- objects in scene -->
- <a-model src="/models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0"></a-model>
+ <a-model src="/models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0" sound="src: /sounds/blobtowerswind2.mp3; autoplay: true; loop: true; volume: 0.02"></a-model>
+
+  	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowersbaseline.mp3; autoplay: true; loop: true; volume: 0.02">  
+              <a-animation attribute="position"
+              from="9 1 9"
+               to="9 0.6 9"
+               dur="5000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+               <a-animation attribute="rotation"
+               to="0 60 0"
+               dur="20000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+  </a-model>
+
+    	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowerswind.mp3; autoplay: true; loop: true; volume: 0.02">  
+              <a-animation attribute="position"
+              from="-9 1 -9"
+               to="-9 0 -9"
+               dur="5000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+               <a-animation attribute="rotation"
+               to="0 60 0"
+               dur="20000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+  </a-model>
+
+      	<a-model src="/models/floating_island3.dae" scale="0.3 0.2 0.3" sound="src: /sounds/blobtowersbirds.mp3; autoplay: true; loop: true; volume: 0.04">  
+              <a-animation attribute="position"
+              from="0 1 -9"
+               to="0 0 -9"
+               dur="5000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+               <a-animation attribute="rotation"
+               to="0 60 0"
+               dur="20000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+  </a-model>
 
   </a-scene>	
   </body>
