@@ -277,7 +277,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/augersdream.png) no-repeat center center scroll;
+    background: url(../img/mossmarch-bg.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -286,6 +286,42 @@ a:focus {
 }
 
 #lower-link3 {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/globetrees-bg.png) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#lower-link4 {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/spaceblobtowers-bg.png) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#lower-link5 {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/augersdream-bg.png) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#lower-link6 {
     width: 100%;
     padding: 50px 0;
     color: #fff;
