@@ -6,18 +6,18 @@
 <!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
 -->
  <script type="text/javascript" src="/js/aframe.js"></script>
-    
+
   </head>
   <body>
 
   <a-scene fog="type: exponential; density: .05; color: #000000; far: 10; near: 0">
 
 
- <a-sky color="#000000"></a-sky> 
+ <a-sky color="#000000"></a-sky>
 
 <!-- lights and ground -->
 <a-entity light="type: ambient; intensity: 2; color: #FFD68B"
-          position="0 40 0"></a-entity> 
+          position="0 40 0"></a-entity>
 <a-entity light="type: point; intensity: 3; distance: 30; decay: 1; color: #FFD68B"
           position="0 20 30"></a-entity>
 <a-entity light="type: point; intensity: 3; distance: 30; decay: 1; color: #FFD68B"
@@ -25,38 +25,38 @@
 <a-entity light="type: point; intensity: 3; distance: 30; decay: 1; color: #FFD68B"
           position="0 20 -30"></a-entity>
 <a-entity light="type: point; intensity: 3; distance: 30; decay: 1; color: #FFD68B"
-          position="-30 20 0"></a-entity>          
+          position="-30 20 0"></a-entity>
 
 <!-- objects in scene -->
 
 <a-plane rotation="90 0 0" scale="100 100" position="0 -1 0" color="#052985" opacity=".9">
 </a-plane>
 
- <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="0 0 -25" rotation="0 0 0" sound="src: /sounds/globebells1.mp3; autoplay: true; loop: true; volume: 0.02">
+ <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="0 0 -25" rotation="0 0 0" sound="src: /sounds/globebells1.ogg; autoplay: true; loop: true; volume: 0.02">
                <a-animation attribute="rotation"
                to="0 360 0"
                dur="50000"
                direction="alternate"
                repeat="indefinite"></a-animation></a-model>
-  <a-model src="/models/glowglobetree1.dae"  scale="0.5 0.5 0.5" position="-25 0 0" rotation="0 0 0" sound="src: /sounds/globebells2.mp3; autoplay: true; loop: true; volume: 0.02">
+  <a-model src="/models/glowglobetree1.dae"  scale="0.5 0.5 0.5" position="-25 0 0" rotation="0 0 0" sound="src: /sounds/globebells2.ogg; autoplay: true; loop: true; volume: 0.02">
                <a-animation attribute="rotation"
                to="0 100 0"
                dur="50000"
                direction="alternate"
                repeat="indefinite"></a-animation></a-model></a-model>
-   <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="0 0 25" rotation="0 0 0" sound="src: /sounds/globebells3.mp3; autoplay: true; loop: true; volume: 0.02">
+   <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="0 0 25" rotation="0 0 0" sound="src: /sounds/globebells3.ogg; autoplay: true; loop: true; volume: 0.02">
                <a-animation attribute="rotation"
                to="0 -36 0"
                dur="50000"
                direction="alternate"
                repeat="indefinite"></a-animation></a-model></a-model>
    </a-model>
-    <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="25 0 0" rotation="0 0 0" sound="src: /sounds/globebells4.mp3; autoplay: true; loop: true; volume: 0.02">          <a-animation attribute="rotation"
+    <a-model src="/models/glowglobetree1.dae" scale="0.5 0.5 0.5" position="25 0 0" rotation="0 0 0" sound="src: /sounds/globebells4.ogg; autoplay: true; loop: true; volume: 0.02">          <a-animation attribute="rotation"
                to="0 70 0"
                dur="50000"
                direction="alternate"
                repeat="indefinite"></a-animation></a-model></a-model></a-model>
 
-  </a-scene>	
+  </a-scene>
   </body>
   </html>

@@ -6,12 +6,12 @@
 <!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
 -->
  <script type="text/javascript" src="/js/aframe.js"></script>
-    
+
   </head>
   <body>
 
   <a-scene fog="type: exponential; density: .2; color: #D8DEBC; far: 30; near: 1">
- <a-sky color="#D8DEBC"></a-sky> 
+ <a-sky color="#D8DEBC"></a-sky>
 
 
 <!-- lights and ground -->
@@ -26,9 +26,9 @@
 
 
 <!-- objects in scene -->
- <a-model src="/models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0" sound="src: /sounds/blobtowerswind2.mp3; autoplay: true; loop: true; volume: 0.02"></a-model>
+ <a-model src="/models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0" sound="src: /sounds/blobtowerswind2.ogg; autoplay: true; loop: true; volume: 0.02"></a-model>
 
-  	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowersbaseline.mp3; autoplay: true; loop: true; volume: 0.02">  
+  	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowersbaseline.ogg; autoplay: true; loop: true; volume: 0.02">
               <a-animation attribute="position"
               from="9 1 9"
                to="9 0.6 9"
@@ -42,7 +42,7 @@
                repeat="indefinite"></a-animation>
   </a-model>
 
-    	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowerswind.mp3; autoplay: true; loop: true; volume: 0.02">  
+    	<a-model src="/models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: /sounds/blobtowerswind.ogg; autoplay: true; loop: true; volume: 0.02">
               <a-animation attribute="position"
               from="-9 1 -9"
                to="-9 0 -9"
@@ -56,7 +56,7 @@
                repeat="indefinite"></a-animation>
   </a-model>
 
-      	<a-model src="/models/floating_island3.dae" scale="0.3 0.2 0.3" sound="src: /sounds/blobtowersbirds.mp3; autoplay: true; loop: true; volume: 0.04">  
+      	<a-model src="/models/floating_island3.dae" scale="0.3 0.2 0.3" sound="src: /sounds/blobtowersbirds.ogg; autoplay: true; loop: true; volume: 0.04">
               <a-animation attribute="position"
               from="0 1 -13"
                to="0.2 0 -13.4"
@@ -70,6 +70,6 @@
                repeat="indefinite"></a-animation>
   </a-model>
 
-  </a-scene>	
+  </a-scene>
   </body>
   </html>
