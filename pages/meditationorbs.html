@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Meditation Orbs</title>
+     <script src="../js/aframe.dev.js"></script>
+  </head>
+  <body>
+
+  <a-scene fog="type: exponential; density: .14; color: #125C99; far: 10; near: 0">
+    <a-assets>
+      <a-asset-item id="meditationplatform" src="../models/meditationplatform.dae"></a-asset-item>
+      <a-asset-item id="meditcrystals" src="../models/meditcrystals.dae"></a-asset-item>
+      <a-asset-item id="meditgreenorbs" src="../models/meditgreenorbs.dae"></a-asset-item>
+      <a-asset-item id="meditlargeorbs" src="../models/meditlargeorbs.dae"></a-asset-item>
+      <a-asset-item id="meditpinkorbs" src="../models/meditpinkorbs.dae"></a-asset-item>
+      <a-mixin id="half-scale" scale="0.5 0.5 0.5"></a-mixin>
+      <a-mixin id="fourth-scale" scale="0.25 0.25 0.25"></a-mixin>      
+    </a-assets>
+
+    <a-entity camera position="0 -1 0" wasd-controls="acceleration: 50w" look-controls></a-entity>
+
+ <a-sky color="#000"></a-sky>
+
+<!-- lights -->
+<a-entity light="type: point; intensity: 1; color: #27C9FE"
+          position="0 10 0"></a-entity>
+<a-entity light="type: point; intensity: 1; color: #FFF5B8"
+          position="0 0 0"></a-entity>
+
+<!-- ground plane -->
+
+<a-entity rotation="90 0 0" position="0 -2 0" scale="50 50" geometry="primitive: plane" material="color: #82FEDB; side: double; opacity: 0.5"></a-entity>
+
+<!-- models -->
+
+  <a-collada-model src="#meditationplatform" mixin="fourth-scale" sound="src: ../sounds/placeholder.ogg; autoplay: true; loop: true; volume: 0.02" position="0 -2 0">
+</a-collada-model>
+
+  <a-collada-model src="#meditcrystals" mixin="half-scale" sound="src: ../sounds/placeholder.ogg; autoplay: true; loop: true; volume: 0.02" position="0 -2 0">
+</a-collada-model>
+
+  <a-collada-model src="#meditlargeorbs" mixin="fourth-scale" sound="src: ../sounds/placeholder.ogg; autoplay: true; loop: true; volume: 0.02">
+                 <a-animation attribute="position"
+                 from="0 0 0"
+               to="0 10 0"
+               dur="20000"
+               direction="alternate"
+               repeat="indefinite"></a-animation>
+</a-collada-model>
+
+  <a-collada-model src="#meditgreenorbs" mixin="half-scale" sound="src: ../sounds/placeholder.ogg; autoplay: true; loop: true; volume: 0.02" position="0 -3 0">
+               <a-animation attribute="rotation"
+               from="0 0 0"
+               to="0 360 0"
+               dur="20000"
+               direction="forward"
+               repeat="indefinite"></a-animation>
+</a-collada-model>
+
+  <a-collada-model src="#meditpinkorbs" mixin="half-scale" sound="src: ../sounds/placeholder.ogg; autoplay: true; loop: true; volume: 0.02" position="0 -3 0">
+                 <a-animation attribute="rotation"
+                 from="0 0 0"
+               to="0 -360 0"
+               dur="20000"
+               direction="forward"
+               repeat="indefinite"></a-animation>
+</a-collada-model>
+
+
+  </a-scene>
+
+  </body>
+</html>

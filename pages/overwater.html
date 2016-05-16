@@ -3,82 +3,100 @@
   <head>
     <meta charset="UTF-8">
     <title>OverWater</title>
-<!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
--->
- <script src="../js/aframe.dev.js"></script>
-
+     <script src="../js/aframe.dev.js"></script>
   </head>
 
   <body>
-  <a-scene>
+<a-scene fog="type: exponential; density: .02; color: #10AAF6; far: 10; near: 0">
+
+<!-- SKYBOX -->
+ <a-sky color="#10AAF6"></a-sky>
+
+<!-- ASSETS -->
+
+    <a-assets>
+      <a-asset-item id="floating_island3" src="../models/floating_island3.dae"></a-asset-item>
+      <a-asset-item id="floating_island2" src="../models/floating_island2.dae"></a-asset-item>
+      <a-mixin id="floatingisland" scale="0.5 0.5 0.5"></a-mixin>
+      <a-asset-item id="rocks" src="../models/waterrocks.dae"></a-asset-item>
+      <a-mixin id="floatingisland" scale="0.5 0.5 0.5"></a-mixin>  
+    </a-assets>
+
   <!-- CAMERA -->
-<a-camera position="0 1.8 0" cursor="fuse: true; maxDistance: 500; timeout: 500"></a-camera>
+<a-entity camera position="5 10 14" wasd-controls="acceleration: 200" look-controls></a-entity>
 
 <!-- LIGHTS -->
 
-<a-light type="ambient" color="white"></a-light>
-<a-light type="directional" color="white" position="1 1 1"></a-light>
-
-<!-- NAV ELEMENTS -->
-  <a-entity position="0 -1.5 0" scale="2 2 2" geometry="primitive: box" color="blue"material="src: url(../img/skybox/icon.png)"
-        </a-entity>
+<a-entity light="type:ambient; color:white; intensity: 1" position="0 0 0"></a-entity>
+<a-entity light="type:directional; color:white" position="1 1 1 intensity: 1"></a-entity>
 
 
-  <a-collada-model src="../models/floating_island3.dae" position="0 -3 -10" scale="0.5 0.5 0.5">
+<!-- ISLANDS -->
+  <a-collada-model src="#floating_island3" mixin="floatingisland">
             <a-animation attribute="position"
-             to="0 0.6 0"
-             dur="5000"
+            from="0 -3 -10"
+             to="0 -2 -10"
+             dur="7000"
              direction="alternate"
              repeat="indefinite"></a-animation>
              <a-animation attribute="rotation"
+             from="0 0 0"
              to="0 60 0"
              dur="20000"
              direction="alternate"
              repeat="indefinite"></a-animation>
   </a-collada-model>
-  <a-collada-model src="../models/floating_island3.dae" position="-40 -3 -20" scale="0.5 0.5 0.5">
-          <a-animation attribute="position"
-           to="0 0.6 0"
-           dur="5000"
-           direction="alternate"
-           repeat="indefinite"></a-animation>
-           <a-animation attribute="rotation"
-           to="0 60 0"
-           dur="20000"
-           direction="alternate"
-           repeat="indefinite"></a-animation>
+
+
+      <a-collada-model src="#floating_island2" position="10 2 10" mixin="floatingisland">
+      <a-animation attribute="position"
+            from="10 2 10"
+             to="10 -2 10"
+             dur="6000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
+             <a-animation attribute="rotation"
+             from="0 0 0"
+             to="0 80 0"
+             dur="20000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
   </a-collada-model>
 
-    <a-collada-model src="../models/floating_island2.dae" position="10 2 10" scale="0.5 0.5 0.5">
-              <a-animation attribute="position"
-               to="0 0.6 0"
-               dur="5000"
-               direction="alternate"
-               repeat="indefinite"></a-animation>
-               <a-animation attribute="rotation"
-               to="0 360 0"
-               dur="50000"
-               direction="alternate"
-               repeat="indefinite"></a-animation>
-  </a-collada-model>
-      <a-collada-model src="../models/floating_island2.dae" position="-30 1 10" scale="0.5 0.5 0.5">
-              <a-animation attribute="position"
-               to="0 0.6 0"
-               dur="5000"
-               direction="alternate"
-               repeat="indefinite"></a-animation>
-               <a-animation attribute="rotation"
-               to="0 360 0"
-               dur="50000"
-               direction="alternate"
-               repeat="indefinite"></a-animation>
+  <a-collada-model src="#floating_island3" position="-40 -3 -20" mixin="floatingisland">
+  <a-animation attribute="position"
+            from="-40 -3 -20"
+             to="-40 -1 -20"
+             dur="6000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
+             <a-animation attribute="rotation"
+             from="0 0 0"
+             to="0 60 0"
+             dur="20000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
   </a-collada-model>
 
+      <a-collada-model src="#floating_island2" position="-30 1 10" mixin="floatingisland">
+      <a-animation attribute="position"
+            from="-30 -3 10"
+             to="-30 3 10"
+             dur="8000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
+             <a-animation attribute="rotation"
+             from="0 0 0"
+             to="0 90 0"
+             dur="20000"
+             direction="alternate"
+             repeat="indefinite"></a-animation>
+  </a-collada-model> 
 
-<!-- THE WATER -->
-<a-plane position="0 -7 0" rotation="90 0 0" scale="200 200" metalness="0.5" opacity="0.8" color="#132340"></a-plane>
+    <!-- THE WATER -->
+<a-entity geometry="primitive: plane" position="0 -7 0" rotation="90 0 0" scale="200 200" material="color:#132340; opacity: 0.9; side: double"></a-entity>
 
-<a-plane position="0 -6.1 0" rotation="90 0 0" scale="199 199" metalness="0.5" opacity="0.3" color="#71FFF6">
+<a-entity  geometry="primitive:plane" position="0 -6.1 0" rotation="90 0 0" scale="199 199" material="opacity: 0.3; color:#71FFF6; side: double">
                <a-animation attribute="position"
                from="0 -6.1 0"
                to="0 -6.3 0"
@@ -86,15 +104,10 @@
                repeat="indefinite"
                direction="alternate">
                </a-animation>
-</a-plane>
-
-
-<!-- ROCKS -->
-  <a-collada-model src="../models/webSceneRocks.dae" position="0 -6 0" scale="3 3 3">
-  </a-collada-model>
-
-<!-- SKYBOX -->
- <a-sky color="#10AAF6"></a-sky>
+</a-entity>
+  <!-- ROCKS -->
+  <a-collada-model src="#rocks" position="0 -6 0" scale="3 3 3" rotation="0 0 0">
+  </a-collada-model> 
 
 </a-scene>
 

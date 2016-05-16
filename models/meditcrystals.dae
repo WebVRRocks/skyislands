@@ -1,0 +1,1634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-10-11, commit time:06:55, hash:48f7dd6</authoring_tool>
+    </contributor>
+    <created>2016-05-14T20:27:12</created>
+    <modified>2016-05-14T20:27:12</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="crystal-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.007106844 0.02234626 0.05097656 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.08026622 0.5 0.3660502 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">411</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="white-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.09844439 0.1203842 0.2190651 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.1505101 0.1730229 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">32</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="crystal-material" name="crystal">
+      <instance_effect url="#crystal-effect"/>
+    </material>
+    <material id="white-material" name="white">
+      <instance_effect url="#white-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cone_025-mesh" name="Cone.025">
+      <mesh>
+        <source id="Cone_025-mesh-positions">
+          <float_array id="Cone_025-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_025-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_025-mesh-normals">
+          <float_array id="Cone_025-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_025-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_025-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_025-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_025-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_025-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_026-mesh" name="Cone.026">
+      <mesh>
+        <source id="Cone_026-mesh-positions">
+          <float_array id="Cone_026-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_026-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_026-mesh-normals">
+          <float_array id="Cone_026-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_026-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_026-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_026-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_026-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_026-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_027-mesh" name="Cone.027">
+      <mesh>
+        <source id="Cone_027-mesh-positions">
+          <float_array id="Cone_027-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_027-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_027-mesh-normals">
+          <float_array id="Cone_027-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_027-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_027-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_027-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_027-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_027-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_028-mesh" name="Cone.028">
+      <mesh>
+        <source id="Cone_028-mesh-positions">
+          <float_array id="Cone_028-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_028-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_028-mesh-normals">
+          <float_array id="Cone_028-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_028-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_028-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_028-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_028-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_028-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_029-mesh" name="Cone.029">
+      <mesh>
+        <source id="Cone_029-mesh-positions">
+          <float_array id="Cone_029-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_029-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_029-mesh-normals">
+          <float_array id="Cone_029-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_029-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_029-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_029-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_029-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_029-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_030-mesh" name="Cone.030">
+      <mesh>
+        <source id="Cone_030-mesh-positions">
+          <float_array id="Cone_030-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_030-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_030-mesh-normals">
+          <float_array id="Cone_030-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_030-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_030-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_030-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_030-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_030-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_031-mesh" name="Cone.031">
+      <mesh>
+        <source id="Cone_031-mesh-positions">
+          <float_array id="Cone_031-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_031-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_031-mesh-normals">
+          <float_array id="Cone_031-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_031-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_031-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_031-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_031-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_031-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_032-mesh" name="Cone.032">
+      <mesh>
+        <source id="Cone_032-mesh-positions">
+          <float_array id="Cone_032-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_032-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_032-mesh-normals">
+          <float_array id="Cone_032-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_032-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_032-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_032-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_032-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_032-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_033-mesh" name="Cone.033">
+      <mesh>
+        <source id="Cone_033-mesh-positions">
+          <float_array id="Cone_033-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_033-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_033-mesh-normals">
+          <float_array id="Cone_033-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_033-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_033-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_033-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_033-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_033-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_034-mesh" name="Cone.034">
+      <mesh>
+        <source id="Cone_034-mesh-positions">
+          <float_array id="Cone_034-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_034-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_034-mesh-normals">
+          <float_array id="Cone_034-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_034-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_034-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_034-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_034-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_034-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_035-mesh" name="Cone.035">
+      <mesh>
+        <source id="Cone_035-mesh-positions">
+          <float_array id="Cone_035-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_035-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_035-mesh-normals">
+          <float_array id="Cone_035-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_035-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_035-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_035-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_035-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_035-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_036-mesh" name="Cone.036">
+      <mesh>
+        <source id="Cone_036-mesh-positions">
+          <float_array id="Cone_036-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_036-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_036-mesh-normals">
+          <float_array id="Cone_036-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_036-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_036-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_036-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_036-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_036-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_037-mesh" name="Cone.037">
+      <mesh>
+        <source id="Cone_037-mesh-positions">
+          <float_array id="Cone_037-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_037-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_037-mesh-normals">
+          <float_array id="Cone_037-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_037-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_037-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_037-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_037-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_037-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_038-mesh" name="Cone.038">
+      <mesh>
+        <source id="Cone_038-mesh-positions">
+          <float_array id="Cone_038-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_038-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_038-mesh-normals">
+          <float_array id="Cone_038-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_038-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_038-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_038-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_038-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_038-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_039-mesh" name="Cone.039">
+      <mesh>
+        <source id="Cone_039-mesh-positions">
+          <float_array id="Cone_039-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_039-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_039-mesh-normals">
+          <float_array id="Cone_039-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_039-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_039-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_039-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_039-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_039-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_040-mesh" name="Cone.040">
+      <mesh>
+        <source id="Cone_040-mesh-positions">
+          <float_array id="Cone_040-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_040-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_040-mesh-normals">
+          <float_array id="Cone_040-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_040-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_040-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_040-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_040-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_040-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_041-mesh" name="Cone.041">
+      <mesh>
+        <source id="Cone_041-mesh-positions">
+          <float_array id="Cone_041-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_041-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_041-mesh-normals">
+          <float_array id="Cone_041-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_041-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_041-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_041-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_041-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_041-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_042-mesh" name="Cone.042">
+      <mesh>
+        <source id="Cone_042-mesh-positions">
+          <float_array id="Cone_042-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_042-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_042-mesh-normals">
+          <float_array id="Cone_042-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_042-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_042-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_042-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_042-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_042-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_043-mesh" name="Cone.043">
+      <mesh>
+        <source id="Cone_043-mesh-positions">
+          <float_array id="Cone_043-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_043-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_043-mesh-normals">
+          <float_array id="Cone_043-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_043-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_043-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_043-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_043-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_043-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_044-mesh" name="Cone.044">
+      <mesh>
+        <source id="Cone_044-mesh-positions">
+          <float_array id="Cone_044-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_044-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_044-mesh-normals">
+          <float_array id="Cone_044-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_044-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_044-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_044-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_044-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_044-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_045-mesh" name="Cone.045">
+      <mesh>
+        <source id="Cone_045-mesh-positions">
+          <float_array id="Cone_045-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_045-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_045-mesh-normals">
+          <float_array id="Cone_045-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_045-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_045-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_045-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_045-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_045-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_046-mesh" name="Cone.046">
+      <mesh>
+        <source id="Cone_046-mesh-positions">
+          <float_array id="Cone_046-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_046-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_046-mesh-normals">
+          <float_array id="Cone_046-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_046-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_046-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_046-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_046-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_046-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_047-mesh" name="Cone.047">
+      <mesh>
+        <source id="Cone_047-mesh-positions">
+          <float_array id="Cone_047-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_047-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_047-mesh-normals">
+          <float_array id="Cone_047-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_047-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_047-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_047-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_047-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_047-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_048-mesh" name="Cone.048">
+      <mesh>
+        <source id="Cone_048-mesh-positions">
+          <float_array id="Cone_048-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_048-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_048-mesh-normals">
+          <float_array id="Cone_048-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_048-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_048-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_048-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_048-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_048-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_049-mesh" name="Cone.049">
+      <mesh>
+        <source id="Cone_049-mesh-positions">
+          <float_array id="Cone_049-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_049-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_049-mesh-normals">
+          <float_array id="Cone_049-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_049-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_049-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_049-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_049-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_049-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_050-mesh" name="Cone.050">
+      <mesh>
+        <source id="Cone_050-mesh-positions">
+          <float_array id="Cone_050-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_050-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_050-mesh-normals">
+          <float_array id="Cone_050-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_050-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_050-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_050-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_050-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_050-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_051-mesh" name="Cone.051">
+      <mesh>
+        <source id="Cone_051-mesh-positions">
+          <float_array id="Cone_051-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_051-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_051-mesh-normals">
+          <float_array id="Cone_051-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_051-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_051-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_051-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_051-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_051-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_052-mesh" name="Cone.052">
+      <mesh>
+        <source id="Cone_052-mesh-positions">
+          <float_array id="Cone_052-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_052-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_052-mesh-normals">
+          <float_array id="Cone_052-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_052-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_052-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_052-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_052-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_052-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_053-mesh" name="Cone.053">
+      <mesh>
+        <source id="Cone_053-mesh-positions">
+          <float_array id="Cone_053-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_053-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_053-mesh-normals">
+          <float_array id="Cone_053-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_053-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_053-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_053-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_053-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_053-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_054-mesh" name="Cone.054">
+      <mesh>
+        <source id="Cone_054-mesh-positions">
+          <float_array id="Cone_054-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_054-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_054-mesh-normals">
+          <float_array id="Cone_054-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_054-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_054-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_054-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_054-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_054-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_055-mesh" name="Cone.055">
+      <mesh>
+        <source id="Cone_055-mesh-positions">
+          <float_array id="Cone_055-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_055-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_055-mesh-normals">
+          <float_array id="Cone_055-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_055-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_055-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_055-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_055-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_055-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_056-mesh" name="Cone.056">
+      <mesh>
+        <source id="Cone_056-mesh-positions">
+          <float_array id="Cone_056-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_056-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_056-mesh-normals">
+          <float_array id="Cone_056-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_056-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_056-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_056-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_056-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_056-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_057-mesh" name="Cone.057">
+      <mesh>
+        <source id="Cone_057-mesh-positions">
+          <float_array id="Cone_057-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_057-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_057-mesh-normals">
+          <float_array id="Cone_057-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_057-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_057-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_057-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_057-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_057-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_058-mesh" name="Cone.058">
+      <mesh>
+        <source id="Cone_058-mesh-positions">
+          <float_array id="Cone_058-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_058-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_058-mesh-normals">
+          <float_array id="Cone_058-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_058-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_058-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_058-mesh-positions"/>
+        </vertices>
+        <polylist material="white-material" count="14">
+          <input semantic="VERTEX" source="#Cone_058-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_058-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_059-mesh" name="Cone.059">
+      <mesh>
+        <source id="Cone_059-mesh-positions">
+          <float_array id="Cone_059-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_059-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_059-mesh-normals">
+          <float_array id="Cone_059-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_059-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_059-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_059-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_059-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_059-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cone_060-mesh" name="Cone.060">
+      <mesh>
+        <source id="Cone_060-mesh-positions">
+          <float_array id="Cone_060-mesh-positions-array" count="27">0 1 4.673426 1 0 4.673426 0 0 5.829514 0 -1 4.673426 -1 0 4.673426 0 0.6858409 -0.2946148 0.6858409 0 -0.2946148 0 -0.6858409 -0.2946148 -0.6858409 0 -0.2946148</float_array>
+          <technique_common>
+            <accessor source="#Cone_060-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cone_060-mesh-normals">
+          <float_array id="Cone_060-mesh-normals-array" count="42">-0.6032199 -0.60322 0.5217772 0.60322 0.60322 0.5217772 -0.6032198 0.6032201 0.5217772 0.6032201 -0.6032199 0.521777 -0.706401 0.7064009 -0.04466992 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.7064009 -0.7064011 -0.04466992 0.7064011 0.7064009 -0.04466992 -0.706401 0.7064009 -0.04466998 0 0 -1 -0.7064011 -0.7064009 -0.04466998 0.706401 -0.706401 -0.04466998 0.706401 0.706401 -0.04466992</float_array>
+          <technique_common>
+            <accessor source="#Cone_060-mesh-normals-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cone_060-mesh-vertices">
+          <input semantic="POSITION" source="#Cone_060-mesh-positions"/>
+        </vertices>
+        <polylist material="crystal-material" count="14">
+          <input semantic="VERTEX" source="#Cone_060-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cone_060-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>3 0 2 0 4 0 0 1 2 1 1 1 4 2 2 2 0 2 1 3 2 3 3 3 0 4 5 4 8 4 6 5 7 5 8 5 4 6 8 6 7 6 3 7 7 7 6 7 1 8 6 8 5 8 4 9 0 9 8 9 5 10 6 10 8 10 3 11 4 11 7 11 1 12 3 12 6 12 0 13 1 13 5 13</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Cone" name="Cone" type="NODE">
+        <matrix sid="transform">2.784395 0.4166166 -0.06211636 -12.91303 -0.4298528 2.738956 -0.2863445 -18.82218 0.03265506 0.5304936 1.527189 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_025-mesh" name="Cone">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_001" name="Cone_001" type="NODE">
+        <matrix sid="transform">2.150256 -0.08214742 -0.09771874 -16.02566 0.05217648 2.130777 -0.1927267 1.058551 0.1892017 0.3459882 1.163711 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_026-mesh" name="Cone_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_002" name="Cone_002" type="NODE">
+        <matrix sid="transform">1.074733 0.05757011 -0.01149633 15.67498 -0.05317603 1.038884 0.1235322 -0.08338451 0.03134564 -0.2114734 0.6037341 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_027-mesh" name="Cone_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_003" name="Cone_003" type="NODE">
+        <matrix sid="transform">2.677711 0.1348456 0.2554468 8.778249 -0.1420452 2.723328 0.01810722 16.11801 -0.4577818 -0.05626724 1.488571 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_028-mesh" name="Cone_003">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_004" name="Cone_004" type="NODE">
+        <matrix sid="transform">1.520464 -0.112633 0.2467345 -8.383853 0.241868 1.507794 -0.2440503 -12.75069 -0.3930725 0.4921044 0.804236 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_029-mesh" name="Cone_004">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_005" name="Cone_005" type="NODE">
+        <matrix sid="transform">1.95919 0.08533448 0.02456624 16.45005 -0.07882302 1.943433 -0.1390076 -2.066998 -0.05555001 0.25201 1.063671 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_030-mesh" name="Cone_005">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_006" name="Cone_006" type="NODE">
+        <matrix sid="transform">1.504493 -0.8583987 0.007531748 6.107326 0.8467963 1.488349 0.1429459 17.59554 -0.141329 -0.2202376 0.9366618 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_031-mesh" name="Cone_006">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_007" name="Cone_007" type="NODE">
+        <matrix sid="transform">1.311779 0.06710129 -0.491147 6.391467 0.2541955 1.494482 0.2642414 14.52682 0.8637497 -0.5417225 0.6681417 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_032-mesh" name="Cone_007">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_008" name="Cone_008" type="NODE">
+        <matrix sid="transform">2.763036 -0.009314112 -0.4075702 -20.65873 -0.01991978 2.855403 -0.06054035 14.52682 0.7414038 0.1114295 1.517291 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_033-mesh" name="Cone_008">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_009" name="Cone_009" type="NODE">
+        <matrix sid="transform">1.506945 -0.04850559 -0.2841392 -18.49926 0.01616241 1.574848 -0.05927048 16.4182 0.5069297 0.09398134 0.8465478 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_034-mesh" name="Cone_009">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_010" name="Cone_010" type="NODE">
+        <matrix sid="transform">1.590739 -0.0115678 -0.0122015 -21.73847 0.01051349 1.588002 -0.04122924 8.503037 0.02276254 0.07494377 0.8717331 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_035-mesh" name="Cone_010">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_011" name="Cone_011" type="NODE">
+        <matrix sid="transform">3.315466 0.1669156 0.3424618 20.14388 -0.1540893 3.366219 -0.04729702 -11.44364 -0.6233846 0.05567155 1.833071 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_036-mesh" name="Cone_011">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_012" name="Cone_012" type="NODE">
+        <matrix sid="transform">1.586695 0.01349743 -0.04936918 9.573843 -0.01589565 1.589996 -0.02327572 -13.7736 0.08934857 0.04317614 0.8725807 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_037-mesh" name="Cone_012">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_013" name="Cone_013" type="NODE">
+        <matrix sid="transform">0.9718006 0.06046642 -0.07556473 -12.47548 -0.04769469 0.9786667 0.05147943 -13.71677 0.1414838 -0.08540968 0.5363804 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_038-mesh" name="Cone_013">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_014" name="Cone_014" type="NODE">
+        <matrix sid="transform">1.590739 -0.0115678 -0.0122015 -4.692181 0.01051349 1.588002 -0.04122924 -24.12559 0.02276254 0.07494377 0.8717331 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_039-mesh" name="Cone_014">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_015" name="Cone_015" type="NODE">
+        <matrix sid="transform">1.541413 -0.09646086 0.2126377 -1.452976 0.04831965 1.564083 0.1171303 -16.21043 -0.387084 -0.1888741 0.8613692 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_040-mesh" name="Cone_015">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_016" name="Cone_016" type="NODE">
+        <matrix sid="transform">2.561186 1.235765 -0.1686483 -3.612445 -1.265241 2.381178 -0.5215664 -18.10181 -0.1547017 0.9842283 1.473593 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_041-mesh" name="Cone_016">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_017" name="Cone_017" type="NODE">
+        <matrix sid="transform">1.074733 0.05757011 -0.01149633 22.67347 -0.05317603 1.038884 0.1235322 10.11078 0.03134564 -0.2114734 0.6037341 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_042-mesh" name="Cone_017">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_018" name="Cone_018" type="NODE">
+        <matrix sid="transform">0.5338363 -0.9003336 -0.1153588 -0.6893635 0.9342895 0.5215296 0.04565855 24.55358 0.03134564 -0.2114734 0.6037341 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_043-mesh" name="Cone_018">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_019" name="Cone_019" type="NODE">
+        <matrix sid="transform">1.596925 -2.368219 0.0627284 12.5714 2.273034 1.486133 -0.4928208 -11.65487 0.6838049 0.5905727 1.491691 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_044-mesh" name="Cone_019">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_020" name="Cone_020" type="NODE">
+        <matrix sid="transform">0.7547853 -1.3779 -0.1003323 11.86219 1.397745 0.7323902 0.09767329 -8.87321 -0.06877796 -0.2373369 0.883903 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_045-mesh" name="Cone_020">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_021" name="Cone_021" type="NODE">
+        <matrix sid="transform">0.6320005 -1.419512 0.1850568 17.45422 1.41277 0.6872689 0.1367696 -15.34402 -0.3684233 0.2003688 0.8419118 -0.8832564 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_046-mesh" name="Cone_021">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_022" name="Cone_022" type="NODE">
+        <matrix sid="transform">0.4747669 -0.8581437 -0.04438872 4.649819 0.8577926 0.4793336 -0.02218156 -17.57354 0.07400839 -0.05067735 0.5418503 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_047-mesh" name="Cone_022">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_023" name="Cone_023" type="NODE">
+        <matrix sid="transform">0.5983822 -1.469188 -0.0625475 14.6799 1.454745 0.5710372 0.1594592 2.062484 -0.2269165 -0.2133933 0.8573428 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_048-mesh" name="Cone_023">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_024" name="Cone_024" type="NODE">
+        <matrix sid="transform">1.680369 -2.903109 0.1926386 17.38619 2.845529 1.712985 0.3325214 12.54248 -0.6956952 -0.00567189 1.825373 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_049-mesh" name="Cone_024">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_025" name="Cone_025" type="NODE">
+        <matrix sid="transform">0.7105852 -1.421283 0.03124245 -19.35633 1.423246 0.7084063 -0.02954042 -15.77693 0.02276254 0.07494377 0.8717331 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_050-mesh" name="Cone_025">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_026" name="Cone_026" type="NODE">
+        <matrix sid="transform">0.7547853 -1.3779 -0.1003323 -24.94835 1.397745 0.7323902 0.09767329 -9.306112 -0.06877796 -0.2373369 0.883903 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_051-mesh" name="Cone_026">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_027" name="Cone_027" type="NODE">
+        <matrix sid="transform">1.359873 -2.484099 -0.213112 -24.23915 2.454321 1.40632 -0.2321943 -12.08777 0.5581168 -0.1316938 1.540331 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_052-mesh" name="Cone_027">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_028" name="Cone_028" type="NODE">
+        <matrix sid="transform">0.7299552 -1.343476 0.2407344 -11.99637 1.348507 0.810382 0.1297387 12.03333 -0.424426 0.2641875 0.8262426 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_053-mesh" name="Cone_028">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_029" name="Cone_029" type="NODE">
+        <matrix sid="transform">0.749752 -1.552791 -0.09029911 -14.8614 1.553451 0.7603042 -0.0526555 13.16884 0.1587461 -0.1063775 0.9417531 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_054-mesh" name="Cone_029">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_030" name="Cone_030" type="NODE">
+        <matrix sid="transform">0.9715561 -1.672044 0.1798274 7.353075 1.703432 0.9427266 -0.1309517 13.49246 0.04606618 0.404056 1.049684 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_055-mesh" name="Cone_030">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_031" name="Cone_031" type="NODE">
+        <matrix sid="transform">0.7591243 -1.392885 -0.05804915 5.640199 1.392523 0.7639914 -0.02926427 -13.48772 0.0971006 -0.06696955 0.8735032 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_056-mesh" name="Cone_031">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_032" name="Cone_032" type="NODE">
+        <matrix sid="transform">1.308858 -2.366376 0.1888127 -12.33501 2.28783 1.35576 0.322341 14.88183 -0.672758 0.006686008 1.463513 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_057-mesh" name="Cone_032">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_033" name="Cone_033" type="NODE">
+        <matrix sid="transform">0.5338363 -0.9003336 -0.1153588 5.233459 0.9342895 0.5215296 0.04565855 13.69908 0.03134564 -0.2114734 0.6037341 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_058-mesh" name="Cone_033">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="white-material" target="#white-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_034" name="Cone_034" type="NODE">
+        <matrix sid="transform">1.042078 -1.873417 -0.1449507 -10.13237 1.889681 1.043206 0.03470221 -14.05206 0.07279446 -0.2621015 1.174181 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_059-mesh" name="Cone_034">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cone_035" name="Cone_035" type="NODE">
+        <matrix sid="transform">1.532746 -2.297137 0.314443 9.004367 2.351371 1.410517 -0.3596889 -20.27439 0.245839 0.8309491 1.479833 -1.303627 0 0 0 1</matrix>
+        <instance_geometry url="#Cone_060-mesh" name="Cone_035">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="crystal-material" target="#crystal-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
