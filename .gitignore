@@ -1,7 +1,6 @@
-
-# pepros webserver #
-#################
 .cfg
+node_modules
+npm-debug*.log
 
 
 # ignoring that pesky mac file that is generated #

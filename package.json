@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "browser-sync": "^2.12.8"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENVIRONMENT='development' npm run server",
+    "prod": "npm run server",
+    "server": "browser-sync start --config bs-config.js"
+  }
+}
