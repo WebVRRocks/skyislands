@@ -3,31 +3,19 @@
  <head>
     <meta charset="UTF-8">
     <title>SequoiaScene</title>
-<!--
-<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
--->
+    <script src="../js/aframe.dev.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="sequoias" src="../models/sequoiascene.dae"></a-asset-item>
+        <a-asset-item id="moss" src="../models/hangingmoss.dae"></a-asset-item>
+      </a-assets>
 
- <script type="text/javascript" src="/js/aframe.js"></script>
+      <a-sky color="#D8DEBC"></a-sky>
 
-
-</head>
-<body>
-	<a-scene>
-
-  <a-assets>
-    <a-asset-item id="sequoias" src="/models/sequoiascene.dae"></a-asset-item>
-    <a-asset-item id="moss" src="/models/hangingmoss.dae"></a-asset-item>
-  </a-assets>
-
-   <a-sky color="#D8DEBC"></a-sky> 
-
-  <a-entity collada-model="#sequoias"></a-entity>
-  <a-entity collada-model="#moss"></a-entity>
-
-<a-model src="models/hangingmoss.dae"; postion="3 3 3"; scale="1 1 1"></a-model>
-
-<a-model src="/models/sequoiascene.dae" position="0 -3 0"></a-model>
-
-	</a-scene>
-</body>
+      <a-entity collada-model="#sequoias" position="0 -3 0"></a-entity>
+      <a-entity collada-model="#moss" position="3 3 3"></a-entity>
+    </a-scene>
+  </body>
 </html>

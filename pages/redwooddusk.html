@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Redwood Dusk</title>
-<!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
--->
- <script type="text/javascript" src="/js/aframe.js"></script>
-    
+    <script src="../js/aframe.dev.js"></script>
   </head>
   <body>
 
   <a-scene fog="type: exponential; density: 0.05; color: #0F4033; far: 9; near: 0">
 
- <a-sky color="#265451"></a-sky> 
+ <a-sky color="#265451"></a-sky>
 
- <a-model src="/models/Sequioa_Scene4.dae" scale="3 3 3" position="0 0 0" sound="src: /sounds/lettucewinds1.mp3; autoplay: true; loop: true; volume: 0.02"></a-collada-model>
+ <a-collada-model src="../models/Sequioa_Scene4.dae" scale="3 3 3" position="0 0 0" sound="src: ../sounds/lettucewinds1.mp3; autoplay: true; loop: true; volume: 0.02"></a-collada-model>
 
 <!-- moon -->
  <a-entity light="type: point; color: #FFE488; intensity: 4" position="3 15 13"></a-entity>
 
 <a-sphere position="3 15 13" color="#415CE8" scale="12 12 12"></a-sphere>
 
-  </a-scene>	
+  </a-scene>
   </body>
-  </html>
+</html>
