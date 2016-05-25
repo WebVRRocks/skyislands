@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DarkLotus</title>
+     <script src="../js/aframe.dev.js"></script>
+     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.16.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+  <a-scene fog="type: exponential; density: .2; color: #00161C; far: 10; near: 2">
+  <a-sky color="#000000"></a-sky>
+
+ <a-entity camera position="0 3 4" wasd-controls="acceleration: 20" look-controls></a-entity>
+
+  <a-entity light="type: point; intensity: 1; color: #ffffff"
+          position="0 3 0"></a-entity>
+   <a-entity light="type: point; intensity: 1; color: #B0400C"
+          position="3 0.5 -1"></a-entity>
+
+
+<a-collada-model src="../models/lotusScene.dae" scale="0.3 0.3 0.3"></a-collada-model>
+<a-entity rotation="90 0 0" position="0 -1 0" scale="100 100" geometry="primitive: plane" material="color: #000; side: double; opacity: 0.1">
+	<a-animation 
+</a-entity>
+
+<a-entity scale="2 1 2"><a-ocean color="#000000" position="0 -1.2 0" density="40" speed="1"></a-ocean>
+</a-entity>
+
+</a-scene>
+</body>
+</html>
