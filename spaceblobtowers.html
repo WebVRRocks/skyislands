@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>SpaceBlobTowers</title>
-<!--	<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
--->
- <script src="../js/aframe.dev.js"></script>
-
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://holodeck.club/common/assets/js/lib/loader.js"></script>
   </head>
   <body>
 
@@ -28,7 +26,7 @@
 <!-- objects in scene -->
  <a-collada-model src="../models/spaceblobtowers.dae" position="-2 0 0" rotation="0 0 0" sound="src: ../sounds/blobtowerswind2.ogg; autoplay: true; loop: true; volume: 0.02"></a-collada-model>
 
-  	<a-collada-model src="../models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: ../sounds/blobtowersbaseline.ogg; autoplay: true; loop: true; volume: 0.02">
+    <a-collada-model src="../models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: ../sounds/blobtowersbaseline.ogg; autoplay: true; loop: true; volume: 0.02">
               <a-animation attribute="position"
               from="9 1 9"
                to="9 0.6 9"
@@ -42,7 +40,7 @@
                repeat="indefinite"></a-animation>
   </a-collada-model>
 
-    	<a-collada-model src="../models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: ../sounds/blobtowerswind.ogg; autoplay: true; loop: true; volume: 0.02">
+      <a-collada-model src="../models/floating_island3.dae" scale="0.5 0.5 0.5" sound="src: ../sounds/blobtowerswind.ogg; autoplay: true; loop: true; volume: 0.02">
               <a-animation attribute="position"
               from="-9 1 -9"
                to="-9 0 -9"
@@ -56,7 +54,7 @@
                repeat="indefinite"></a-animation>
   </a-collada-model>
 
-      	<a-collada-model src="../models/floating_island3.dae" scale="0.3 0.2 0.3" sound="src: ../sounds/blobtowersbirds.ogg; autoplay: true; loop: true; volume: 0.04">
+        <a-collada-model src="../models/floating_island3.dae" scale="0.3 0.2 0.3" sound="src: ../sounds/blobtowersbirds.ogg; autoplay: true; loop: true; volume: 0.04">
               <a-animation attribute="position"
               from="0 1 -13"
                to="0.2 0 -13.4"

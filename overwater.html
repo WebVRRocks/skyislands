@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html >
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>OverWater</title>
-     <script src="../js/aframe.dev.js"></script>
+    <script src="js/aframe.dev.js"></script>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
       <a-asset-item id="floating_island2" src="../models/floating_island2.dae"></a-asset-item>
       <a-mixin id="floatingisland" scale="0.5 0.5 0.5"></a-mixin>
       <a-asset-item id="rocks" src="../models/waterrocks.dae"></a-asset-item>
-      <a-mixin id="floatingisland" scale="0.5 0.5 0.5"></a-mixin>  
+      <a-mixin id="floatingisland" scale="0.5 0.5 0.5"></a-mixin>
     </a-assets>
 
   <!-- CAMERA -->
@@ -91,7 +91,7 @@
              dur="20000"
              direction="alternate"
              repeat="indefinite"></a-animation>
-  </a-collada-model> 
+  </a-collada-model>
 
     <!-- THE WATER -->
 <a-entity geometry="primitive: plane" position="0 -7 0" rotation="90 0 0" scale="200 200" material="color:#132340; opacity: 0.9; side: double"></a-entity>
@@ -107,7 +107,7 @@
 </a-entity>
   <!-- ROCKS -->
   <a-collada-model src="#rocks" position="0 -6 0" scale="3 3 3" rotation="0 0 0">
-  </a-collada-model> 
+  </a-collada-model>
 
 </a-scene>
 
