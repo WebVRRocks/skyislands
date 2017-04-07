@@ -295,9 +295,9 @@ a:focus {
     background-image: url(../img/overwater-bg.png);
 }
 
-[data-scene="mossmarch"] {
+[data-scene="mossmarsh"] {
     background-position: 50% 50%;
-    background-image: url(../img/mossmarch-bg.png);
+    background-image: url(../img/mossmarsh-bg-alt.png);
 }
 
 [data-scene="carnivalglobetrees"] {
@@ -308,14 +308,19 @@ a:focus {
     background-image: url(../img/spaceblobtowers-bg.png);
 }
 
+[data-scene="redwooddusk"] {
+    background-position: 50% 100%;
+    background-image: url(../img/redwooddusk-bg.png);
+}
+
 [data-scene="darklotus"] {
     background-position: 50% 35%;
     background-image: url(../img/darklotus-bg.png);
 }
 
-[data-scene="redwooddusk"] {
-    background-position: 50% 100%;
-    background-image: url(../img/redwooddusk-bg.png);
+[data-scene="meditationorbs"] {
+    background-position: 50% 35%;
+    background-image: url(../img/meditationorbs-bg.png);
 }
 
 [data-scene="augersdream"] {

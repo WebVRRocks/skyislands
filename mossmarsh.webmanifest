@@ -1,0 +1,57 @@
+{
+  "name": "Mossmarsh",
+  "short_name": "Mossmarsh",
+  "description": "View on a desktop WebVR-capable browser such as Firefox or the experimental Chromium builds. Move around by pressing the arrow keys, and look around by clicking-and-dragging the mouse cursor. To view on Android phones, use Chrome Canary (e.g., Google Daydream, Google Cardboard) or Samsung Gear VR (on Android: Oculus Browser, Samsung Internet), and on iPhones, use Safari or Firefox for iOS.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./mossmarsh.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#bedbbe",
+  "background_color": "#415c80",
+  "icons": [
+    {
+      "src": "img/mossmarsh-icon-896.png",
+      "sizes": "896x896",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "img/mossmarsh-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "img/mossmarsh-icon-alt-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/mossmarsh-bg-alt.png",
+      "sizes": "2272x1216",
+      "type": "image/png"
+    },
+    {
+      "src": "img/mossmarsh-bg.png",
+      "sizes": "1486x539",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

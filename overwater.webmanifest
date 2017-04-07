@@ -1,0 +1,40 @@
+{
+  "name": "Islands Over Water",
+  "short_name": "OverWater",
+  "description": "Ancient islands gracefully floating over water in virtual reality.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./overwater.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#20c3f9",
+  "background_color": "#20c3f9",
+  "icons": [
+    {
+      "src": "img/overwater-bg.png",
+      "sizes": "1638x438",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "icons": [
+    {
+      "src": "img/overwater-bg.png",
+      "sizes": "1638x438",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

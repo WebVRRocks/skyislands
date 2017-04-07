@@ -1,0 +1,46 @@
+{
+  "name": "Meditation Orbs",
+  "short_name": "MeditatiOrbs",
+  "description": "Center your Chi in virtual reality.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./meditationorbs.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#2299bc",
+  "background_color": "#2299bc",
+  "icons": [
+    {
+      "src": "img/meditationorbs-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "img/meditationorbs-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/meditationorbs-bg.png",
+      "sizes": "2869x1443",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

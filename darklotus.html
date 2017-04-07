@@ -1,11 +1,15 @@
 <!doctype html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>DarkLotus</title>
+    <title>Dark Lotus</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="darklotus.webmanifest">
     <script src="js/aframe.dev.js"></script>
-     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.16.0/dist/aframe-extras.min.js"></script>
-</head>
-<body>
+    <script src="https://agent.webvr.rocks/client.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.16.0/dist/aframe-extras.min.js"></script>
+    <meta name="description" content="Sit nearby a pond in virtual reality, and breathe in the fragrant, dark lotus floral ambiance.">
+  </head>
+  <body>
 
   <a-scene fog="type: exponential; density: .35; color: #000000; far: 10; near: 2">
 
@@ -37,5 +41,5 @@
 <a-collada-model src="models/lotusScene.dae" position="-6 0 6" scale="0.3 0.3 0.3" sound="src: sounds/globebells4.ogg; autoplay: true; loop: true; volume: 0.05"></a-collada-model>
 
 </a-scene>
-</body>
+  </body>
 </html>

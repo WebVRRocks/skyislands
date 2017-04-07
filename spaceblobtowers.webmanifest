@@ -1,0 +1,40 @@
+{
+  "name": "SpaceBlob Towers",
+  "short_name": "SpaceBlob",
+  "description": "You're lost in a strange desert in virtual reality.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./spaceblobtowers.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#262723",
+  "background_color": "#262723",
+  "icons": [
+    {
+      "src": "img/spaceblobtowers-bg.png",
+      "sizes": "1776x585",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/spaceblobtowers-bg.png",
+      "sizes": "1776x585",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

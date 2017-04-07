@@ -1,0 +1,40 @@
+{
+  "name": "Dark Lotus",
+  "short_name": "Dark Lotus",
+  "description": "Sit nearby a pond in virtual reality, and breathe in the fragrant, dark lotus floral ambiance.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./darklotus.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#1d4b11",
+  "background_color": "#1d4b11",
+  "icons": [
+    {
+      "src": "img/darklotus-bg.png",
+      "sizes": "1486x539",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/darklotus-bg.png",
+      "sizes": "1486x539",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

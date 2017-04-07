@@ -1,0 +1,40 @@
+{
+  "name": "Redwood Dusk",
+  "short_name": "Redwood Dusk",
+  "description": "Towering trees rise through the dim mist.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./redwooddusk.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#496a3b",
+  "background_color": "#496a3b",
+  "icons": [
+    {
+      "src": "img/redwooddusk-bg.png",
+      "sizes": "2208x1428",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/redwooddusk-bg.png",
+      "sizes": "2208x1428",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}

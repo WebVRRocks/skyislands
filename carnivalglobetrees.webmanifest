@@ -1,0 +1,40 @@
+{
+  "name": "Carnival Globe Trees",
+  "short_name": "Carnival Globe",
+  "description": "Hear the sound of the trees singing in virtual reality.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./carnivalglobetrees.html?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#dcbe6d",
+  "background_color": "#dcbe6d",
+  "icons": [
+    {
+      "src": "img/globetrees-bg.png",
+      "sizes": "2443x770",
+      "type": "image/png",
+      "border_radius": "3px"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/globetrees-bg.png",
+      "sizes": "2443x770",
+      "type": "image/png"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}
