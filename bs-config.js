@@ -33,7 +33,8 @@ module.exports = {
   watchOptions: {
     ignoreInitial: true
   },
-  open: getEnvVar('BS_OPEN', isDev),
+  port: process.env.BS_PORT || process.env.PORT || 3000,
+  open: getEnvVar('BS_OPEN', false),
   notify: getEnvVar('BS_NOTIFY', false),
   tunnel: getEnvVar('BS_TUNNEL', isDev),
   minify: getEnvVar('BS_MINIFY', isDev)
