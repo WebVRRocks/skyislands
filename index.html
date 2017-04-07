@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -202,10 +200,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.8.js'><\/script>".replace("HOST", location.hostname));
-//]]></script>
-</body>
-
+    <script id="__bs_script__">
+      (functipn () {
+        var IS_PROD = !window.location.port ||
+          (WEBVR_AGENT_HOSTNAME.split('.').length !== 4 && WEBVR_AGENT_HOSTNAME !== 'localhost' &&
+          WEBVR_AGENT_HOSTNAME.substr(WEBVR_AGENT_HOSTNAME.length - 4) !== '.dev');
+        if (!IS_PROD) {
+          document.write('<script async src="http://{HOST}:3000/browser-sync/browser-sync-client.2.12.8.js"><\/script>'.replace('{HOST}', window.location.hostname));
+        }
+      })();
+    </script>
+  </body>
 </html>
