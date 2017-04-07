@@ -4,17 +4,28 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html,
 body {
-    width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    width: 100%;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-custom,
+.btn {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
 }
 
 h1,
@@ -23,11 +34,10 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    margin: 0 0 35px;
+    text-transform: uppercase;
 }
 
 p {
@@ -36,7 +46,7 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
@@ -65,7 +75,6 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
@@ -122,7 +131,7 @@ a:focus {
     color: #fff;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -168,7 +177,7 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -223,7 +232,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -240,7 +249,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -257,108 +266,79 @@ a:focus {
     }
 }
 
+[data-scene] {
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-color: #000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+}
+
+[data-scene]:before {
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+[data-scene="overwater"] {
+    background-image: url(../img/overwater-bg.png);
+}
+
+[data-scene="mossmarch"] {
+    background-position: 50% 50%;
+    background-image: url(../img/mossmarch-bg.png);
+}
+
+[data-scene="carnivalglobetrees"] {
+    background-image: url(../img/globetrees-bg.png);
+}
+
+[data-scene="spaceblobtowers"] {
+    background-image: url(../img/spaceblobtowers-bg.png);
+}
+
+[data-scene="darklotus"] {
+    background-position: 50% 35%;
+    background-image: url(../img/darklotus-bg.png);
+}
+
+[data-scene="redwooddusk"] {
+    background-position: 50% 100%;
+    background-image: url(../img/redwooddusk-bg.png);
+}
+
+[data-scene="augersdream"] {
+    background-image: url(../img/augersdream-bg.png);
+}
+
+[data-scene="spidersgate"] {
+    background-image: url(../img/SkyIslands-EJL-Feb-2016.png);
+}
+
 .content-section {
+    margin-top: -50px;
     padding-top: 100px;
 }
 
-#lower-link1 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/overwater-bg.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#lower-link2 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/mossmarch-bg.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#lower-link3 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/globetrees-bg.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#lower-link4 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/spaceblobtowers-bg.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#lower-link5 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/augersdream-bg.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#lower-link6 {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/SkyIslands-EJL-Feb-2016.png) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
+.content-section.visit {
+    padding-top: 50px;
 }
 
 .btn {
     border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
