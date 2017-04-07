@@ -13,14 +13,14 @@
     <a-entity camera position="0 1.8 4" wasd-controls="acceleration: 200" look-controls></a-entity>
 
     <a-assets>
-      <a-asset-item id="minerslettuce" src="../models/minersLettuce1.dae"></a-asset-item>
+      <a-asset-item id="minerslettuce" src="models/minersLettuce1.dae"></a-asset-item>
       <a-mixin id="lettuce" scale="0.5 0.5 0.5"></a-mixin>
     </a-assets>
 
 <!-- lights and ground -->
 <a-entity light="type: point; color: #EFFFD0; intensity: 1.7" position="3, 10, 5"></a-entity>
 
- <a-collada-model src="../models/pointymountains.dae" scale="3 3 3" position="0 -3 0" sound="src: ../sounds/lettucewinds3.ogg; autoplay: true; loop: true; volume: 0.08"></a-collada-collada-model>
+ <a-collada-model src="models/pointymountains.dae" scale="3 3 3" position="0 -3 0" sound="src: sounds/lettucewinds3.ogg; autoplay: true; loop: true; volume: 0.08"></a-collada-collada-model>
 <a-plane position="0 1 0" rotation="90 0 0" scale="50 50" metalness="0.5" opacity="1" color="#59363C"></a-plane>
 
 <a-entity  rotation="90 0 0" position="0 0 0" scale="50 50" geometry="primitive: plane" material="color: #EEFF9B; side: double; opacity: .4">
@@ -36,9 +36,9 @@
 
 
 <!-- objects in scene -->
- <a-collada-model src="../models/hangingmoss.dae" position="3 0 2 "></a-collada-model>
- <a-collada-model src="../models/hangingmoss.dae" position="-5 0 -2"></a-collada-model>
-  <a-collada-model src="../models/hangingmoss.dae" position="-3 4 -5"></a-collada-model>
+ <a-collada-model src="models/hangingmoss.dae" position="3 0 2 "></a-collada-model>
+ <a-collada-model src="models/hangingmoss.dae" position="-5 0 -2"></a-collada-model>
+  <a-collada-model src="models/hangingmoss.dae" position="-3 4 -5"></a-collada-model>
 
 
 <a-collada-model src="#minerslettuce" mixin="lettuce" position="-5 1 -5">      <a-animation
